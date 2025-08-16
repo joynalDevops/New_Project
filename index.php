@@ -11,8 +11,8 @@ try {
 
 // Create
 if (isset($_POST['name']) && isset($_POST['email'])) {
-    $stmt = $pdo->prepare("INSERT INTO contacts (name, email) VALUES (:name, :email)");
-    $stmt->execute(['name' => $_POST['name'], 'email' => $_POST['email']]);
+    $stmt = $pdo->prepare("INSERT INTO contacts (Test, email) VALUES (:Test, :email)");
+    $stmt->execute(['Test' => $_POST['Test'], 'email' => $_POST['email']]);
     header("Location: index.php");
     exit;
 }
