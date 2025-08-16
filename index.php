@@ -3,11 +3,11 @@ $dsn = "pgsql:host=localhost;dbname=cruddb;port=5432";
 $user = "cruduser";
 $pass = "crudpass";
 
-try {
-    $pdo = new PDO($dsn, $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
-} catch (PDOException $e) {
-    die("❌ DB Connection Failed: " . $e->getMessage());
-}
+# try {
+ #   $pdo = new PDO($dsn, $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+# } catch (PDOException $e) {
+ #   die("❌ DB Connection Failed: " . $e->getMessage());
+# }
 
 // Create
 if (isset($_POST['name']) && isset($_POST['email'])) {
