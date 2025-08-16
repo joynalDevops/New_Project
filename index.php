@@ -42,23 +42,18 @@ if (isset($_GET['delete'])) {
     </style>
 </head>
 <body>
-    <h2>Contacts (PHP + PostgreSQL CRUD)</h2>
-    <form method="POST">
-        <input type="text" name="name" placeholder="Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <button type="submit">Add Contact</button>
-    </form>
+  #  </form>
 
-    <table>
-        <tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
-        <?php foreach ($contacts as $c): ?>
-            <tr>
-                <td><?= htmlspecialchars($c['id']) ?></td>
-                <td><?= htmlspecialchars($c['name']) ?></td>
-                <td><?= htmlspecialchars($c['email']) ?></td>
-                <td><a href="?delete=<?= $c['id'] ?>" onclick="return confirm('Delete this contact?')">Delete</a></td>
+ #   <table>
+ #       <tr><th>ID</th><th>Name</th><th>Email</th><th>Action</th></tr>
+  #      <?php foreach ($contacts as $c): ?>
+ #           <tr>
+  #              <td><?= htmlspecialchars($c['id']) ?></td>
+  #              <td><?= htmlspecialchars($c['name']) ?></td>
+  #              <td><?= htmlspecialchars($c['email']) ?></td>
+ #               <td><a href="?delete=<?= $c['id'] ?>" onclick="return confirm('Delete this contact?')">Delete</a></td>
             </tr>
-        <?php endforeach; ?>
-    </table>
-</body>
-</html>
+ #       <?php endforeach; ?>
+#    </table>
+#</body>
+#</html>
