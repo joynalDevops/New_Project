@@ -22,4 +22,4 @@ server {
 
     error_log /var/log/nginx/new_project_error.log;
     access_log /var/log/nginx/new_project_access.log;
-}
+    }
